@@ -1,5 +1,9 @@
 # bottom-el
 
+# show me!
+
+![money shot](img/wat-demo.gif)
+
 ## dafuq
 
 Start here:
