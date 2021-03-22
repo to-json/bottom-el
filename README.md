@@ -30,11 +30,11 @@ _prs welcome_
 
 ## how do i use it?
 
-clone the repo somewhere
-in emacs
-- `M-x load-file /path/to/repo/bottom.el`
-- highlight a region
-- `M-x bottom-ify-interactive`
+- clone the repo somewhere
+- in emacs
+- - `M-x load-file /path/to/repo/bottom.el`
+- - highlight a region
+- - `M-x bottom-ify-interactive`
 - bask
 
 read the source for more (bad) ideas
