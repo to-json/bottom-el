@@ -27,8 +27,12 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Install emacs
-        run: sudo apt-get install emacs
+        run: sudo apt-get install emacs tree
 
       # Runs a single command using the runners shell
       - name: Run my tests
-        run: pushd bottom-el; emacs -batch -l ert -l bottom.el -l bottom-test.el -f ert-run-tests-batch-and-exit; popd
+        run: pushd $GITHUB_WORKSPACE/bottom-el; emacs -batch -l ert -l bottom.el -l bottom-test.el -f ert-run-tests-batch-and-exit; popd
+        
+      # Dir structure for funsies
+      - name: Show directory structure
+        run: tree
