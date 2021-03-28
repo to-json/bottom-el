@@ -128,7 +128,31 @@
 ;;                                                     "👉👈💖✨✨✨✨🥺,,,,👉👈💖💖👉👈"))
 ;; 		 "ab\ncd")))
 
+;; (ert-deftest bottom-regress-test-cyrillic ()
+;;   "tests core bottomification functionality"
+;;   (should (equal (bottom-regress cyrillic-test-data)
+;; 		 "Я тут бота на коленке сделала")))
+;; 
+;; (ert-deftest bottom-ify-test-cyrillic ()
+;;   "tests core bottomification functionality"
+;;   (should (equal (bottom-ify "Я тут бота на коленке сделала")
+;; 		 cyrillic-test-data)))
+
 ;; when making modifications, these are convenient to have around
 ;; (defvar test-data "💖💖✨,👉👈💖💖✨,,,,👉👈💖💖🥺,,,👉👈") ;; -> orl
 ;; (defvar multiline-test-data (concat "💖✨✨✨✨🥺,,👉👈💖✨✨✨✨🥺,,,👉👈\n"
 ;;                                    "👉👈💖✨✨✨✨🥺,,,,👉👈💖💖👉👈")) ;; -> "ab\ncd"
+
+;; (defvar cyrillic-test-data (concat
+;;   "🫂🫂🫂🫂🫂💖✨✨,👉👈✨✨✨,,👉👈🫂🫂🫂🫂🫂💖✨✨✨✨👉👈"
+;;   "🫂🫂🫂🫂🫂💖✨✨✨✨,👉👈🫂🫂🫂🫂🫂💖✨✨✨✨👉👈✨✨✨,,👉👈"
+;;   "🫂🫂🫂🫂🫂💖✨✨,,,👉👈🫂🫂🫂🫂🫂💖✨✨✨🥺,👉👈"
+;;   "🫂🫂🫂🫂🫂💖✨✨✨✨👉👈🫂🫂🫂🫂🫂💖✨✨,,👉👈✨✨✨,,👉👈"
+;;   "🫂🫂🫂🫂🫂💖✨✨✨🥺👉👈🫂🫂🫂🫂🫂💖✨✨,,👉👈✨✨✨,,👉👈"
+;;   "🫂🫂🫂🫂🫂💖✨✨✨,,👉👈🫂🫂🫂🫂🫂💖✨✨✨🥺,👉👈"
+;;   "🫂🫂🫂🫂🫂💖✨✨✨,,,👉👈🫂🫂🫂🫂🫂💖✨✨🥺,,👉👈"
+;;   "🫂🫂🫂🫂🫂💖✨✨✨🥺👉👈🫂🫂🫂🫂🫂💖✨✨✨,,👉👈"
+;;   "🫂🫂🫂🫂🫂💖✨✨🥺,,👉👈✨✨✨,,👉👈🫂🫂🫂🫂🫂💖✨✨✨🥺,,,,👉👈"
+;;   "🫂🫂🫂🫂🫂💖✨✨🥺,👉👈🫂🫂🫂🫂🫂💖✨✨🥺,,👉👈"
+;;   "🫂🫂🫂🫂🫂💖✨✨✨,,,👉👈🫂🫂🫂🫂🫂💖✨✨,,👉👈"
+;;   "🫂🫂🫂🫂🫂💖✨✨✨,,,👉👈🫂🫂🫂🫂🫂💖✨✨,,👉👈"))

@@ -21,11 +21,12 @@ later
 
 ## did you test cyrrilic?
 
-later
+yup!
 
 ## please add...
 
 nah
+
 _prs welcome_
 
 ## how do i use it?
