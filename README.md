@@ -17,7 +17,8 @@ because you should be able to speak bottom with æ lisp
 
 ## minor mode?
 
-later
+later. tbh, this would just add keybinds, and you probably want direct control
+over those, if you want them at all.
 
 ## did you test cyrrilic?
 
@@ -39,6 +40,10 @@ _prs welcome_
 - bask
 
 read the source for more (bad) ideas
+
+## how do i run the tests?
+
+`emacs -batch -l ert -l bottom.el -l bottom-test.el -f ert-run-tests-batch-and-exit`
 
 ## anything else i should know?
 
