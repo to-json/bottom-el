@@ -96,48 +96,6 @@
 	((eq c ?,)   1)
 	(t c)))
 
-;; tests commented out because i like having it all in one file, but,
-;; emacs will happily load these and make shit confusing
-;; if you're actually using ert
-
-;; (ert-deftest bottom-ify-test-basic ()
-;;   "tests core bottomification functionality"
-;;   (should (equal (bottom-ify "Hello world!")
-;; 		 (concat "💖✨✨,,👉👈💖💖,👉👈💖💖🥺,,,👉👈💖💖🥺,,,👉👈"
-;;                          "💖💖✨,👉👈✨✨✨,,👉👈💖💖✨🥺,,,,👉👈"
-;; 			 "💖💖✨,👉👈💖💖✨,,,,👉👈💖💖🥺,,,👉👈"
-;;                          "💖💖👉👈✨✨✨,,,👉👈"))))
-;; 
-;; (ert-deftest bottom-ify-controlled-test-basic ()
-;;   "tests collared bottomification functionality"
-;;   (should (equal (bottom-ify-controlled "ab\ncd")
-;;                  (concat "💖✨✨✨✨🥺,,👉👈💖✨✨✨✨🥺,,,👉👈\n"
-;;                          "👉👈💖✨✨✨✨🥺,,,,👉👈💖💖👉👈"))))
-;; 
-;; (ert-deftest bottom-regress-test-basic ()
-;;   "tests core bottomification functionality"
-;;   (should (equal (bottom-regress (concat "💖✨✨,,👉👈💖💖,👉👈💖💖🥺,,,👉👈"
-;; 			                 "💖💖🥺,,,👉👈💖💖✨,👉👈✨✨✨,,👉👈"
-;; 			                 "💖💖✨🥺,,,,👉👈💖💖✨,👉👈💖💖✨,,,,"
-;; 			                 "👉👈💖💖🥺,,,👉👈💖💖👉👈✨✨✨,,,👉👈"))
-;; 		 "Hello world!")))
-;; 
-;; (ert-deftest bottom-regress-controlled-test-basic ()
-;;   "tests collared bottomification functionality"
-;;   (should (equal (bottom-regress-controlled (concat "💖✨✨✨✨🥺,,👉👈💖✨✨✨✨🥺,,,👉👈\n"
-;;                                                     "👉👈💖✨✨✨✨🥺,,,,👉👈💖💖👉👈"))
-;; 		 "ab\ncd")))
-
-;; (ert-deftest bottom-regress-test-cyrillic ()
-;;   "tests core bottomification functionality"
-;;   (should (equal (bottom-regress cyrillic-test-data)
-;; 		 "Я тут бота на коленке сделала")))
-;; 
-;; (ert-deftest bottom-ify-test-cyrillic ()
-;;   "tests core bottomification functionality"
-;;   (should (equal (bottom-ify "Я тут бота на коленке сделала")
-;; 		 cyrillic-test-data)))
-
 ;; when making modifications, these are convenient to have around
 ;; (defvar test-data "💖💖✨,👉👈💖💖✨,,,,👉👈💖💖🥺,,,👉👈") ;; -> orl
 ;; (defvar multiline-test-data (concat "💖✨✨✨✨🥺,,👉👈💖✨✨✨✨🥺,,,👉👈\n"
